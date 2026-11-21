@@ -1,0 +1,574 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 2em;
+    color: #7a3025;
+    text-align: left;
+
+}
+hr{
+    border: none;
+    height: 1px;
+    background-color: #7a3025;
+    width: 30%;
+    margin-left: 0%;
+    margin-right: auto;
+
+}
+p{
+    color: black;
+    font: size 2.5em;
+    text-align:justify;
+
+}
+header{
+    background-color: #7a3025;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+header h1{
+    color: #ffffff;
+    margin: 0;
+    font-size: 2.5em;
+    text-align: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+} 
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+nav ul li a:hover{
+    color: #f77327;
+}
+main{
+    padding: 20px;
+    text-align: center;
+}
+main p{
+    text-align: justify;
+    margin-right: 30px;
+    margin-left: 0;
+    color: #7a3025;
+
+}
+footer{
+    background-color: #7a3025;
+    color: #7a3025;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+}
+footer h1,h2,h3,h4,h5,h6,p{
+    color: #ffffff;
+}
+form{
+    max-width: 400px;
+    margin:0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+input, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #7a3025;
+    border-radius: 4px;
+}
+input[type="submit"]{
+    background-color: #7a3025;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #f77327;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /*separación entre las columnas*/
+}
+.columna{ 
+    flex: 1; /* Hacer que cada columna ocupe el mismo espacio*/
+
+}
+iframe{
+    width: 100%;
+    height: 300px;
+    border: 0;
+
+}
+.imagen-fachada{
+    width: 600px;
+    height: 400px;
+    /* Posición */
+    display: block;
+    margin-left: auto;
+    margin-right: 50px;
+    /* Marco*/
+    border: 5px solid #7a3025;
+    /* Ajuste de Imagen */
+    object-fit: cover;
+    transform: translatey(-300px);
+}
+.boton-bienvenida{
+    display: block;
+    width: fit-content;
+    position: absolute;
+    top: 480px;
+    left: 30px;
+    background-color: #7a3025;
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.boton-bienvenida:hover{
+background-color: #f77327;
+
+}
+.escudo-encabezado{
+    width: 130px;
+    height: 110px;
+    object-fit: contain;
+    position: absolute;
+    left: 25px;
+    top: 10px;
+}
+.areaencabezado{
+    text-align: right;
+    color: #ffffff;
+    margin-left: auto;
+}
+.areaencabezado h2{
+    font-size: 16px;
+    margin: 0;
+    text-align: right;
+
+}
+.areaencabezado p{
+    font-size: 12px;
+    margin: 0;
+    text-align: right;
+    color: #ffffff;
+}
+.textoizquierdo{
+    text-align: left;
+}
+.texto-pie{
+    text-align: right;
+    max-width: 350px;
+}
+.textoizquierdo h2{
+    font-size: 20px;
+    margin: 3px 0;
+}
+.textoizquierdo p{
+    font-size: 13px;
+    margin: 3px 0;
+}
+.texto-pie h4{
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+.texto-pie p{
+    font-size: 13px;
+    margin: 3px 0;
+    line-height: 1.4;
+}
+.contenedor-bienvenida{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 350px;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    /*Bordes*/
+    border: 3px solid #7a3025;
+    border-radius: 12px;
+}
+.imagen-escuela{
+    width: 65%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.imagen-escuela img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border: 2px solid #7a3025;
+    border-radius: 10px;
+}
+.texto-bienvenida{
+    width: 35%;
+    text-align: center;
+    padding: 15px;
+}
+.texto-bienvenida h1{
+    font-size: 30px;
+    color: #7a3025;
+}
+.texto-bienvenida h2{
+    font-size: 20px;
+    color: #7a3025;
+}
+.boton-avisos{
+    background-color: #7a3025;
+    border: none;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor-avisos{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 25px;
+}
+.aviso{
+    width: 280px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #7a3025;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+.aviso h2{
+    color: #7a3025;
+    font-size: 20px;
+}
+.aviso p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.contenedorcal{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.calendario{
+    width: 60%;
+    border: 2px solid #7a3025;
+    padding: 15px;
+    border-radius: 10px;
+}
+.calendario h2{
+    color: #7a3025;
+    font-size: 25px;
+}
+.calendario img{
+    width: 100%;
+    height: auto;
+}
+.eventos{
+    width: 40%;
+    border: 2px solid #7a3025;
+    border-radius: 10px;
+    padding: 15px;
+}
+.eventos h2{
+    background-color: #7a3025;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    margin: -15px -15px 15px;
+}
+/* =========================
+   RESPONSIVE PARA TABLETS
+========================= */
+
+@media (max-width: 900px) {
+
+    /* Encabezado */
+    .escudo-encabezado {
+        width: 90px;
+        height: 90px;
+        left: 10px;
+    }
+
+    .areaencabezado {
+        margin-left: 100px;
+    }
+
+    /* Imagen principal */
+    .imagen-fachada {
+        max-width: 55%;
+        height: auto;
+        transform: none;
+    }
+
+    /* Bienvenida */
+    .contenedor-bienvenida {
+        gap: 10px;
+    }
+
+    .imagen-escuela {
+        width: 55%;
+    }
+
+    .texto-bienvenida {
+        width: 45%;
+    }
+
+    /* Calendario */
+    .contenedorcal {
+        gap: 12px;
+    }
+
+    .calendario {
+        width: 60%;
+    }
+
+    .eventos {
+        width: 40%;
+    }
+}
+
+/* =========================
+   RESPONSIVE PARA CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    /* General */
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.4em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    main p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Encabezado */
+    header {
+        padding: 15px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    .escudo-encabezado {
+        position: static;
+        width: 75px;
+        height: 75px;
+    }
+
+    .areaencabezado {
+        text-align: center;
+        margin: 10px 0 0;
+    }
+
+    .areaencabezado h2,
+    .areaencabezado p {
+        text-align: center;
+    }
+
+    /* Menú */
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    /* Contenedores generales */
+    .contenedor,
+    .contenedorcal,
+    .contenedor-bienvenida {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .columna,
+    .calendario,
+    .eventos,
+    .imagen-escuela,
+    .texto-bienvenida {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Imagen de fachada */
+    .imagen-fachada {
+        position: static;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 15px auto;
+        transform: none;
+        box-sizing: border-box;
+    }
+
+    /* Botón de bienvenida */
+    .boton-bienvenida {
+        position: static;
+        display: block;
+        width: fit-content;
+        margin: 15px auto;
+    }
+
+    /* Imagen de escuela */
+    .imagen-escuela {
+        height: auto;
+    }
+
+    .imagen-escuela img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Texto de bienvenida */
+    .texto-bienvenida {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .texto-bienvenida h1 {
+        font-size: 25px;
+    }
+
+    /* Avisos */
+    .contenedor-avisos {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .aviso {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Calendario y eventos */
+    .calendario img {
+        width: 100%;
+        height: auto;
+    }
+
+    .calendario h2 {
+        font-size: 22px;
+    }
+
+    /* Botón de avisos */
+    .boton-avisos {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+
+    /* Formularios */
+    form {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Pie de página */
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .textoizquierdo,
+    .texto-pie {
+        text-align: center;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .textoizquierdo h2,
+    .texto-pie h4 {
+        text-align: center;
+    }
+
+    .textoizquierdo p,
+    .texto-pie p {
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
+
+    /* Imágenes y videos */
+    img, iframe {
+        max-width: 100%;
+    }
+}
+   .boton-avisos {
+        display: block;
+        width: 85%;
+        max-width: 280px;
+        box-sizing: border-box;
+        margin: 12px auto;
+        padding: 12px;
+        text-align: center;
+        font-size: 16px;
+    }
+
